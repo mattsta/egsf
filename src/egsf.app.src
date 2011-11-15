@@ -1,0 +1,15 @@
+{application, egsf,
+ [
+  {description, "egsf - erlang global serializing framework"},
+  {vsn, "0.3"},
+  {modules, []},
+  {registered, [egsf_sup,
+                egsf_server]},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, {egsf_app, []}},
+  {env, []}
+ ]
+}.
